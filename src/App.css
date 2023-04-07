@@ -1,38 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textHead {
+  background-color: green;
+  padding-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.textHead h1 {
+  border-bottom: 1px solid white;
+  padding: 5vh 0;
+  font-size: 50px;
   color: white;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.first_lorem {
+  padding-top: 5vh;
+  width: 60%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textheader_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.numberHead {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.header_description {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.textheader_grid div {
+  border-right: 1px solid white;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.firstsection_what {
+  color: green;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20vh 0 2vh 0;
+}
+
+.firstsection_header {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20vh;
+}
+
+.section_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 180px;
+}
+
+.section_flex {
+  display: flex;
+  width: 450px;
+}
+
+.section_flex div {
+  text-align: left;
+}
+
+.section_img {
+  font-size: 25px;
+  padding-right: 2vw;
+}
+
+.section_column {
+  padding-bottom: 10vh;
+}
+
+.section_column p {
+  padding-top: 2vh;
+  line-height: 25px;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.footer_grid img {
+  width: 250px;
+  height: 200px;
+}
+
+.footer_grid h3 {
+  color: cornflowerblue;
+  padding: 1.5vh 0 2vh 1vw;
+}
+
+.footer_grid p:nth-of-type(1) {
+  padding-left: 1vw;
+  line-height: 25px;
+  width: 250px;
+}
+
+.footer_grid p:nth-of-type(2) {
+  padding: 1.5vh 0 2vh 1vw;
+  color: lightseagreen;
+  font-weight: 800;
 }
